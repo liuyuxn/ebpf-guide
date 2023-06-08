@@ -17,7 +17,7 @@ Linux hostname 5.19.0-43-generic #44~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon May 
 $ apt install git clang llvm libelf1 libelf-dev zlib1g-dev binutils-dev libcap-dev gcc-multilib
 ```
 
-*「注」即使没有使用命令安装 zlib1g-dev，其也应作为依赖被自动安装。文中的部分命令执行可能需要 root 权限，以下不再注明。*
+> *「注」即使没有使用命令安装 zlib1g-dev，其也应作为依赖被自动安装。文中的部分命令执行可能需要管理员权限，以下不再注明。*
 
 出于方便和较新的版本的原因，使用源码安装 bpftool 和 libbpf。
 
@@ -106,3 +106,7 @@ $ ./hello
 ```
 
 可以在 `/sys/kernel/debug/tracing/trace_pipe` 文件中得到持续输出。
+
+## Samples in Kernel Source 内核源码中的样例程序
+
+[获取 Kernel Source，并生成 Sample 程序](samples.md)
